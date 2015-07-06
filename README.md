@@ -1,5 +1,13 @@
 # FlywaySbt
-This version of the Flyway SBT Plugin fixes issue https://github.com/flyway/flyway/issues/979 .
+This version of the Flyway SBT Plugin fixes issue *can't migrate as long as there are compile errors* https://github.com/flyway/flyway/issues/979 .
+
+    I try to flywayMigrate but there are compile errors.
+    So the migrate task is never executed.
+    
+    The funny thing is, that i can only generate the proper code with jooq after i migrated the database.
+    
+    Is there a way get around the compile dependency?
+
 
 Also the plugin works now purely with SBT.
 
